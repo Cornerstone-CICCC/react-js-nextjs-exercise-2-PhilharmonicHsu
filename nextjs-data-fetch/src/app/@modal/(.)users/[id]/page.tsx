@@ -13,13 +13,13 @@ const page =  async ({ params }: Props) => {
   return (
     <div className="fixed w-screen h-screen top-0 left-0 bg-black/70 flex items-center justify-center">
       <div className="bg-white text-black p-3 w-1/3">
-        <div>{data.firstName}</div>
-        <div>{data.lastName}</div>
-        <div>{data.age}</div>
-        <div>{data.gender}</div>
-        <div>{data.email}</div>
+        <div>First Name: {data.firstName}</div>
+        <div>Last Name: {data.lastName}</div>
+        <div>Age: {data.age}</div>
+        <div>Gender: {data.gender}</div>
+        <div>Email: {data.email}</div>
 
-        <a href="/users" className="border-1 px-2 mt-1 inline-block rounded-md shadow-md">Back</a>
+        <Link href="/users" className="border-1 px-2 mt-1 inline-block rounded-md shadow-md">Back</Link>
         <a href={`/users/${data.id}`} className="border-1 px-2 mt-1 inline-block rounded-md shadow-md">View User</a>
       </div>
     </div>
